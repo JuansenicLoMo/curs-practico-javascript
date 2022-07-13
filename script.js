@@ -79,3 +79,28 @@ function calcularAreaCuadrado(){
     alert(area);
 }
 
+// Triangulo isósceles.
+function alturaTriangulo(lados, base){
+    const a = lados * lados;
+    const b = (base * base) / 4;
+    
+    return Math.sqrt (a-b);
+}
+
+function calcularalturaTrianguloIso(){
+
+    
+    const lados = document.getElementById("inputLado");
+    const base = document.getElementById("inputBase");
+    const ladoValor = lados.value;
+    const baseValor = base.value;
+    
+    const valorAltura = alturaTriangulo(ladoValor, baseValor);
+    
+    console.log( ladoValor + " " + baseValor);
+    alert(valorAltura);
+
+    
+    
+}
+
